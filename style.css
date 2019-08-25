@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(167, 183, 189);
+    color: white;
+}
+
+.weather {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.clock h1 {
+    font-size : 130px;
+    height: 120px;
+    margin-bottom: 5px;
+}
+
+.form,
+.greetings {
+    display: none;
+}
+
+.greetings {
+    font-size: 60px;
+    margin: 13px;
+    top: -100px;
+}
+
+.showing {
+    display: block;
+}
+
+.form input,
+.toDoForm input{
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    border-bottom: 2px solid white;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    background-color: transparent;
+    width: 600px;
+    height: 40px;
+    outline: none;
+    transition: border-color .2s ease;
+}
+
+.form input{
+    width: 400px;
+    margin-top: 21px;
+    margin-bottom: 28px;
+}
+
+.form input::placeholder,
+.toDoForm input::placeholder{
+    font-size: 40px;
+    color: rgb(201, 201, 201);
+    margin: 0;
+}
+
+.toDoList {
+    font-size: 30px;
+}
+
+.toDoList botton {
+    margin-left: 20px;
+}
+
+.center .toDoList {
+    list-style-type: disc;
+    margin-inline-start: 17em;
+    width: 500px;
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: : 0;
+    }
+    to {
+        opacity : 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 1s linear;
+}
